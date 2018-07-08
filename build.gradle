@@ -2,7 +2,7 @@ group 'com.github.karayuumac'
 version '1.0.0'
 
 buildscript {
-    ext.kotlin_version = '1.2.50'
+    ext.kotlin_version = '1.2.51'
 
     repositories {
         mavenCentral()
@@ -53,7 +53,7 @@ jar {
 
 task copyJar(type: Copy){
     from jar
-    into "C:\\Users\\karayuu\\Documents\\sponge(1.12.2)\\server\\mods"
+    into "C:\\Users\\karayuu\\Documents\\InfinityCircles\\mods"
 }
 
 task copyJarMac(type: Copy) {

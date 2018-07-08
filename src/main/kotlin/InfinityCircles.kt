@@ -2,6 +2,7 @@ import com.google.inject.Inject
 import org.slf4j.Logger
 import org.spongepowered.api.event.Listener
 import org.spongepowered.api.event.game.state.GamePreInitializationEvent
+import org.spongepowered.api.event.game.state.GameStoppingEvent
 import org.spongepowered.api.plugin.Plugin
 
 /**
@@ -15,7 +16,12 @@ class InfinityCircles {
 
     @Listener
     fun onPreInitialization(event: GamePreInitializationEvent) {
-        logger.info("Start Plugin.")
+        logger.info("Start plugin.")
+    }
+
+    @Listener
+    fun onGameStopped(event: GameStoppingEvent) {
+        logger.info("Stop plugin.")
     }
 
     companion object {

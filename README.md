@@ -4,4 +4,5 @@
 
 
 ## License
-License: No Licenses
+License: No License
+I don't offer any license.
