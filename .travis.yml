@@ -4,4 +4,6 @@ jdk:
  - oraclejdk8
 
 script:
- - ./gradle build,copyJar
+ - ./gradlew assemble
+ - ./gradle build
+ - ./gradle copyJar
